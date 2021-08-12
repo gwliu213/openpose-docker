@@ -18,6 +18,15 @@ $ git clone https://github.com/esemeniuc/openpose-docker.git
 $ cd ./openpose-docker
 $ sudo docker build -t openpose .
 ```
+#### if docker file not work, pull image
+```
+
+docker pull cwaffles/openpose
+docker run --gpus all --name openpose -it cwaffles/openpose /bin/bash
+apt-get update
+apt-get install vim
+
+```
 #### start docker env.
 ```
 $ sudo docker run --gpus all --name openpose -it openpose_v1:latest /bin/bash
